@@ -1,0 +1,12 @@
+.my-links a {
+  color: var(--black);
+  margin-right: 15px;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.my-links a:hover {
+  color: var(--white);
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 5px var(--black));
+}

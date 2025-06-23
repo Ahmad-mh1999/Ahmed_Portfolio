@@ -1,0 +1,71 @@
+:root {
+    --font-name-family : 'Dancing Script',cursive ;
+    --font-medium-xx-size : 1.25rem;
+    --font-medium-x-size : 1.125rem;
+    --font-medium-size : 1rem;
+    --black: #0e0f13;
+    --skills-gradient: #00000099;
+    --input-form-color: #212529;
+    --secondary: #343a40;
+    --scrollbar-color: #424242;
+    --main-shadow: #6c757d;
+    --overview-layer: #7e7c7c81;
+    --white: #f3f4f6;
+    --placeholder-color: #8e98a1;
+    --primary: #343a40;
+    --focus-color: #ced4da;
+    --hover-color: #d1d1d1;
+    --svg-color: #cfcfcfcc;
+    --active-color: #bcbebf;
+    --active-color-nav: #3b82f6;
+    --active-color-hover-nav: #5ba8e8;
+  }
+  .dark-mode {
+    --white: #0e0f13;
+    --primary: #e1e1e1 ;
+    --placeholder-color: #727c86;
+    --focus-color: #424242;
+    --hover-color: #495057;
+    --black: #f3f4f6;
+    --secondary: #d7d4d4;
+    --input-form-color: #e1e1e1;
+    --skills-gradient: #cfcfcf99;
+    --scrollbar-color: #c2c9cf;
+    --svg-color: #8e98a1;
+    --active-color: #2c3237;
+    --active-color-nav: #197de1;
+    --active-color-hover-nav: #2b8ae8
+  }
+
+  .oneskill-component{
+    overflow: hidden;
+    position: relative;
+    /* background: linear-gradient(90deg, var(--white) 0%, var(--white) 40%, var(--skills-gradient) 100%) ; */
+    border: 1px solid rgb(214, 214, 214);
+    height: 74px !important;
+    display: flex;
+    justify-content: space-between;
+    /* width: 300px; */
+  }
+  .oneskill-component:hover{
+    border: 1px solid rgb(214, 214, 214);
+    transform: scale(1.05);
+    transition: all .3s;
+  }
+  .oneskill-component p{
+    margin: 0 ;
+    padding: 0 20px;
+    color: var(--secondary) !important;
+  }
+  .oneskill-component img{
+    position: absolute;
+    width: 80px  ;
+    opacity: 0.6;
+    right: 0;
+    top: -5px;
+  }
+  @media (max-width: 767px) {
+    .oneskill-component p{
+      line-height: 36px;
+    }
+  }
