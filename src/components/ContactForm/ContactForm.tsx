@@ -7,47 +7,47 @@ function ContactForm() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitting] = useState(false);
 
-  const [errors, setErrors] = useState({
+  const [errors] = useState({
     name: "",
     email: "",
     subject: "",
     message: "",
   });
 
-  const validate = () => {
-    const newErrors = { name: "", email: "", subject: "", message: "" };
+  // const validate = () => {
+  //   const newErrors = { name: "", email: "", subject: "", message: "" };
 
-    if (!name) {
-      newErrors.name = "Required";
-    } else if (name.length > 25) {
-      newErrors.name = "Must be 25 characters or less";
-    }
+  //   if (!name) {
+  //     newErrors.name = "Required";
+  //   } else if (name.length > 25) {
+  //     newErrors.name = "Must be 25 characters or less";
+  //   }
 
-    if (!email) {
-      newErrors.email = "Required";
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      newErrors.email = "Invalid email address";
-    }
+  //   if (!email) {
+  //     newErrors.email = "Required";
+  //   } else if (!/\S+@\S+\.\S+/.test(email)) {
+  //     newErrors.email = "Invalid email address";
+  //   }
 
-    if (!subject) {
-      newErrors.subject = "Required";
-    } else if (subject.length > 255) {
-      newErrors.subject = "Must be 255 characters or less";
-    }
+  //   if (!subject) {
+  //     newErrors.subject = "Required";
+  //   } else if (subject.length > 255) {
+  //     newErrors.subject = "Must be 255 characters or less";
+  //   }
 
-    if (!message) {
-      newErrors.message = "Required";
-    } else if (message.length < 10) {
-      newErrors.message = "Must be at least 10 characters";
-    }
+  //   if (!message) {
+  //     newErrors.message = "Required";
+  //   } else if (message.length < 10) {
+  //     newErrors.message = "Must be at least 10 characters";
+  //   }
 
-    setErrors(newErrors);
+  //   setErrors(newErrors);
 
-    // Return true if no errors
-    return !Object.values(newErrors).some((error) => error);
-  };
+  //   // Return true if no errors
+  //   return !Object.values(newErrors).some((error) => error);
+  // };
   const onSubmit = async (event:any) => {
     event.preventDefault();
     const formData = new FormData(event.target);

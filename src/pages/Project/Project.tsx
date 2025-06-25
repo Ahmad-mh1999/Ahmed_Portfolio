@@ -1,13 +1,8 @@
 import { HiCode } from "react-icons/hi";
 import "./Project.css";
-import { FaArrowLeft, FaArrowRight, FaLink } from "react-icons/fa6";
+import { FaArrowRight, FaLink } from "react-icons/fa6";
 import { FaEye } from "react-icons/fa";
-import { Link, useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import { TParams, TProject } from "../../types/type";
-import PreLoader from "../../components/Preloader/Preloader";
-import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import ScaleAnimation from "../../components/animation/ScaleAnimation";
 import SectionTitleAnimation from "../../components/animation/SectionTitleAnimation";
 import homePageVS from "./../../assets/vistSirya/Home.png"
@@ -34,7 +29,6 @@ import bootstrapimg from "./../../assets/bootstrap.svg";
 import jsimg from "./../../assets/js.svg";
 import reactimg from "./../../assets/react.svg";
 import laravelimg from "./../../assets/laravel-2.svg";
-import { delay } from "framer-motion";
 function Project() {
 
   const skills = [

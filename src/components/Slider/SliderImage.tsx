@@ -1,4 +1,3 @@
-import { THeroSlider } from '../../types/type';
 import './SliderImage.css'
 import Slider from "react-slick";
 import htmlimg from "./../../assets/html.svg";

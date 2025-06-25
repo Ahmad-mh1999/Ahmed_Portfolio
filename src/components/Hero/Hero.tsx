@@ -5,7 +5,6 @@ import { FaLinkedin } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
 import { FaWhatsappSquare } from "react-icons/fa";
 import SliderImage from "../Slider/SliderImage";
-import { Link } from "react-router-dom";
 import LeftAnimation from "../animation/LeftAnimation";
 import ScaleAnimation from "../animation/ScaleAnimation";
 

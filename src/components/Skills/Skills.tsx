@@ -1,5 +1,4 @@
 import OneSkill from "../OneSkill/OneSkill";
-import { TSkill } from "../../types/type";
 import SectionTitleAnimation from "../animation/SectionTitleAnimation";
 import htmlimg from "./../../assets/html.svg";
 import mySqlimg from "./../../assets/MySQL.svg";

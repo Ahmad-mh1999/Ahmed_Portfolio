@@ -5,8 +5,7 @@ import Login from './pages/Login/Login';
 import Navbar from './components/Navbar/Navbar';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { AppProvider } from './contexts/AppContext';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Project from './pages/Projects/Project1/Project';
 import Project2 from './pages/Projects/Project2/Project2';
 import Project3 from './pages/Projects/Project3/Project3';
@@ -17,7 +16,6 @@ function App() {
 
   return (
     <>
-      <AppProvider>
         <Navbar />
         <Routes >
           <Route path='/' element={<Home />} />
@@ -29,7 +27,6 @@ function App() {
           <Route path='/project/5' element={<Project5 />} />
           <Route path='/project/6' element={<Project6 />} />
         </Routes>
-      </AppProvider>
     </>
 
   )

@@ -7,13 +7,12 @@ import EducationElement from "../../components/EducationElement/EducationElement
 import Hero from "../../components/Hero/Hero";
 import Skills from "../../components/Skills/Skills";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
-import { useAppContext } from "../../contexts/AppContext";
+import { useState, useEffect } from "react";
 import AdevLoader from "../../components/AdevLoader/AdevLoader/AdevLoader";
 import SectionTitleAnimation from "../../components/animation/SectionTitleAnimation";
 import LeftAnimation from "../../components/animation/LeftAnimation";
 import ScaleAnimation from "../../components/animation/ScaleAnimation";
 import WhyCardAnimation from "../../components/animation/WhyCardAnimation";
-import { delay } from "framer-motion";
 function Home() {
   var delay: number = 0;
   const data = [
@@ -39,7 +38,12 @@ function Home() {
     },
   ];
 
-  const { loading } = useAppContext();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 3000);
+    return () => clearTimeout(timer);
+  }, []);
 
   if (loading) return <AdevLoader />;
 

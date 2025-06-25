@@ -11,7 +11,6 @@ import jsimg from "./../../assets/js.svg";
 import reactimg from "./../../assets/react.svg";
 import reduximg from "./../../assets/redux.svg";
 import laravelimg from "./../../assets/laravel-2.svg";
-import { delay } from "framer-motion";
 
 function ProjectCard() {
   const projects = [
